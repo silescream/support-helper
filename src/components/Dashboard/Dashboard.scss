@@ -1,0 +1,22 @@
+
+.dashboard {
+    height: 100%;
+    max-width: 255px;
+    background-color: #363740;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    &__header {
+        padding: 20px 30px;
+    }
+
+    &__logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__title {
+        color: #A4A6B3;
+        font-size: 19px;
+        font-weight: 500;
+    }
+}
