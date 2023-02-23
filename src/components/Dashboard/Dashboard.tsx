@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import './Dashboard.scss'
 import supportlogo from "../../assets/support.png"
 import overview from "../../assets/overview.svg";
@@ -14,15 +15,15 @@ export const Dashboard = () => {
         <ul className="dashboard__list">
             <li className= "dashboard__item"> 
                 <img className= "dashboard__icon" src={overview} alt="" /> 
-                <a className ="dashboard__link" href="#">Overview</a>
+                <NavLink className ="dashboard__link" to='/overview'>Overview</NavLink>
             </li>
             <li className= "dashboard__item"> 
                 <img className= "dashboard__icon" src={templates} alt="" />
-                <a className ="dashboard__link" href="#">Templates</a>
+                <NavLink className ="dashboard__link" to='/templates'>Templates</NavLink>
             </li>
             <li className= "dashboard__item"> 
                 <img className= "dashboard__icon" src={contacts} alt="" />
-                <a className ="dashboard__link" href ="#">Contacts</a>
+                <NavLink className ="dashboard__link" to='contacts'>Contacts</NavLink>
             </li>
         </ul>
         </div>

@@ -1,4 +1,4 @@
-import { Templates } from "../../modules/Templates/Templates";
+import { Outlet } from "react-router-dom";
 import { Dashboard } from "../Dashboard/Dashboard";
 import { Header } from "../Header/Header";
 import './Layout.scss'
@@ -9,7 +9,7 @@ export const Layout = () => {
         <Dashboard />
         <div className="layout">
             <Header />
-            <Templates />
+            <Outlet />
         </div>
         </>
     );
